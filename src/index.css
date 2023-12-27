@@ -1,20 +1,90 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
-  background-color: #1c1819;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-
-  min-height: 100vh;
-  color: #a68b85;
-
-  background-image: url(https://i.imgur.com/CzmE8sy.png);
+  font-family: "Microsoft JhengHei", "Apple LiGothic", "SimSun", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*evAa3W8shOJNlTqGNaahaA.png');
   background-size: cover;
-  font-family: Inter, sans-serif;
+  background-repeat: no-repeat;
+  color: #333;
 }
-.reckless {
-  font-family: Reckless Neue;
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1 {
+  color: ;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #0056b3; /* Reddish tone */
+  color: #ffffff; /* White text for better contrast */
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #ff4d4d;
+}
+
+.paragraph-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.6;
+}
+
+#displayParagraph {
+  margin-top: 20px;
+}
+
+.paragraph-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 5px solid #007bff;
+}
+
+.paragraph-section strong {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.paragraph-section p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.intro-animation {
+  font-size: 24px;
+  text-align: center; /* Aligns the text to the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px; /* Set a height to vertically center the text */
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
